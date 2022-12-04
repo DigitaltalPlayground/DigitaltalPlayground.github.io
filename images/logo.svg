@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="1050"
-   height="1200"
-   viewBox="0 0 1050 1200"
+   width="3143.6951"
+   height="1000"
+   viewBox="0 0 3143.6951 1000"
    version="1.1"
    id="svg5"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -13,32 +13,51 @@
   <defs
      id="defs2">
     <linearGradient
-       id="linearGradient3841">
+       xlink:href="#g"
+       id="linearGradient129"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-56.276425,93.557617)"
+       x1="715.16595"
+       y1="478.43213"
+       x2="1696.8789"
+       y2="758.34204" />
+    <linearGradient
+       id="g">
       <stop
          style="stop-color:#ff0066;stop-opacity:1"
          offset="0"
-         id="stop3837" />
+         id="stop18387" />
       <stop
          style="stop-color:#ff7f2a;stop-opacity:1"
          offset="1"
-         id="stop3839" />
+         id="stop18389" />
     </linearGradient>
-    <linearGradient
-       xlink:href="#linearGradient3841"
-       id="linearGradient3835"
-       x1="550"
-       y1="400"
-       x2="1600"
-       y2="1600"
-       gradientUnits="userSpaceOnUse" />
   </defs>
   <g
-     id="layer1"
-     transform="translate(-550,-400)"
+     id="g2980"
      style="fill:#ffffff">
-    <path
-       id="path237"
-       style="fill:#ffffff;fill-opacity:1;stroke-width:99.9997;stroke-linecap:round;stroke-linejoin:round"
-       d="m 625,400 a 75,75 0 0 0 -75,75 75,75 0 0 0 75,75 h 375 a 450,450 0 0 1 450,450 450,450 0 0 1 -450,450 h -75 a 75,75 0 0 0 -75,75 75,75 0 0 0 75,75 h 75 a 600,600 0 0 0 600,-600 600,600 0 0 0 -600,-600 z m 0,300 a 75,75 0 0 0 -75,75 75,75 0 0 0 75,75 h 375 a 150,150 0 0 1 150,150 150,150 0 0 1 -150,150 H 625 a 75,75 0 0 0 -75,75 v 300 a 75,75 0 0 0 75,75 75,75 0 0 0 75,-75 v -225 h 300 a 300,300 0 0 0 300,-300 300,300 0 0 0 -300,-300 z" />
+    <g
+       id="layer1"
+       transform="matrix(0.58823529,0,0,0.58823529,-88.235294,-88.235294)"
+       style="stroke-width:1.7;fill:#ffffff">
+      <path
+         id="path3890"
+         style="fill:#ffffff;stroke-width:8.5;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+         d="m 1000,150 a 850,850 0 0 0 -850,850 850,850 0 0 0 850,850 850,850 0 0 0 850,-850 850,850 0 0 0 -850,-850 z M 625,400 h 375 a 600,600 0 0 1 600,600 600,600 0 0 1 -600,600 h -75 a 75,75 0 0 1 -75,-75 75,75 0 0 1 75,-75 h 75 A 450,450 0 0 0 1450,1000 450,450 0 0 0 1000,550 H 625 a 75,75 0 0 1 -75,-75 75,75 0 0 1 75,-75 z m 0,300 h 375 a 300,300 0 0 1 300,300 300,300 0 0 1 -300,300 H 700 v 225 a 75,75 0 0 1 -75,75 75,75 0 0 1 -75,-75 v -300 a 75,75 0 0 1 75,-75 h 375 A 150,150 0 0 0 1150,1000 150,150 0 0 0 1000,850 H 625 a 75,75 0 0 1 -75,-75 75,75 0 0 1 75,-75 z" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:300px;line-height:1.1;font-family:'Noto Sans JP';-inkscape-font-specification:'Noto Sans JP';font-variant-ligatures:none;letter-spacing:5px;fill:#ffffff;fill-opacity:1"
+       x="1101.2529"
+       y="428"
+       id="text133377"><tspan
+         x="1101.2529"
+         y="428"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:300px;font-family:'Bai Jamjuree';-inkscape-font-specification:'Bai Jamjuree Bold';fill:#ffffff;fill-opacity:1"
+         id="tspan149977">DIGITALTAL</tspan><tspan
+         x="1101.2529"
+         y="782"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:300px;font-family:'Bai Jamjuree';-inkscape-font-specification:'Bai Jamjuree Bold';fill:#ffffff;fill-opacity:1"
+         id="tspan176529">PLAYGROUND</tspan></text>
   </g>
 </svg>
