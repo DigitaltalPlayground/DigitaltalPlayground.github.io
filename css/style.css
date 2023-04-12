@@ -58,10 +58,12 @@ img {
 /* ボタン */
 .button01 {
   position: relative;
+  display: block;
   font-size: 1.375rem;
+  text-align: center;
   background: white;
   color: #7b0cff;
-  padding: 18px 50px;
+  padding: 1rem 4rem;
   transition: 0.5s;
 }
 .button01::after {
@@ -76,14 +78,16 @@ img {
   content: "";
 }
 .button01:hover {
-  background: #cccccc;
+  background: rgba(255, 255, 255, 0.5);
 }
 .button02 {
   position: relative;
+  display: block;
   font-size: 1.375rem;
+  text-align: center;
   border: 1px solid white;
   color: white;
-  padding: 18px 50px;
+  padding: 1rem 4rem;
   transition: 0.5s;
 }
 .button02::after {
@@ -98,22 +102,114 @@ img {
   content: "";
 }
 .button02:hover {
-  background: #a0d1ff;
+  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* ハンバーガーメニュー */
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #333;
+  position: absolute;
+}
+.menu-btn span:before {
+  bottom: 8px;
+}
+.menu-btn span:after {
+  top: 8px;
+}
+#menu-btn-check:checked ~ .menu-btn span {
+  background-color: rgba(255, 255, 255, 0); /*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+  background-color: white;
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+  top: 0;
+  transform: rotate(-45deg);
+  background-color: white;
+}
+#menu-btn-check {
+  display: none;
+}
+.hamburger-menu {
+  display: none;
+}
+
+.menu-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%; /*leftの値を変更してメニューを画面外へ*/
+  z-index: 80;
+  background-color: #333;
+  transition: all 0.5s; /*アニメーション設定*/
+}
+.menu-content ul {
+  padding: 70px 10px 0;
+}
+.menu-content ul li {
+  border-bottom: solid 1px #ffffff;
+  list-style: none;
+}
+.menu-content ul li a {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 9px 15px 10px 0;
+  position: relative;
+}
+.menu-content ul li a::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: solid 2px #ffffff;
+  border-right: solid 2px #ffffff;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 11px;
+  top: 16px;
+}
+#menu-btn-check:checked ~ .menu-content {
+  left: 0; /*メニューを画面内へ*/
 }
 
 /* HEADER */
 .page-header {
   position: fixed;
-  z-index: 99;
+  z-index: 50;
   top: 0;
   margin: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: white;
-  padding: 0 100px;
+  justify-content: space-between;
+  padding: 1.3rem 10%;
   height: 6rem;
+  background-color: white;
 }
 .page-header a {
   display: inline;
@@ -121,15 +217,13 @@ img {
 }
 .logo {
   height: 100%;
-  padding: 15px 0;
 }
 .main-nav {
   display: flex;
-  font-size: 1.25rem;
+  column-gap: 2.5rem;
+  align-items: center;
+  justify-content: flex-start;
   list-style: none;
-}
-.main-nav li {
-  margin-left: 36px;
 }
 .main-nav a {
   color: #333;
@@ -149,6 +243,7 @@ footer p {
   font-size: 0.875rem;
 }
 
+/* バナー */
 .banner {
   background: linear-gradient(90deg, #7b0cff, #2689ff);
   padding: 1.5rem;
@@ -171,62 +266,55 @@ footer p {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   margin: 0;
-  padding: 0;
+  padding: 0 10%;
 }
 .home-content .propaganda {
   color: white;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
-.home-content a {
-  margin-right: 2rem;
+#home-button {
+  display: flex;
+  gap: 1rem 2rem;
+}
+#home-button > a {
+  width: 13rem;
 }
 
 /* ABOUT */
 #about {
   margin-top: 6rem;
 }
-#about p {
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem 4rem;
+  padding-bottom: 4rem;
+}
+.about-content .about-column {
+  padding: 0 10%;
+}
+.about-content p {
   margin-top: 1.2rem;
   font-size: 1.4rem;
   font-weight: bold;
 }
-#about-column-01 > div {
+.about-content img {
+  max-width: 40%;
+}
+.about-column {
   display: flex;
+  gap: 2rem 1rem;
   justify-content: space-between;
-  padding-bottom: 6rem;
+  align-items: center;
 }
-#about-column-01 p {
-  width: 26em;
-}
-#about-column-01 img {
-  height: 330px;
-}
-#about-column-02 {
+.about-column:nth-child(2n) {
   background-color: #ececec;
+  padding: 5rem 10%;
+  flex-direction: row-reverse;
 }
-#about-column-02 > div {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-#about-column-02 p {
-  width: 24em;
-}
-#about-column-02 img {
-  height: 330px;
-}
-#about-column-03 > div {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-#about-column-03 p {
-  width: 28em;
-}
-#about-column-03 img {
-  height: 330px;
+.about-column > div {
+  max-width: 55%;
 }
 
 /* TERMS */
@@ -281,6 +369,7 @@ footer p {
   display: none;
 }
 .acd-label {
+  cursor: pointer;
   background: #ececec;
   display: block;
   padding: 1.5rem;
@@ -292,6 +381,7 @@ footer p {
   content: "";
   background-image: url(../images/plus.svg);
   background-position: center;
+  background-size: 50%;
   height: 100%;
   padding: 1rem 2rem;
   display: inline-block;
@@ -299,6 +389,10 @@ footer p {
   right: 2rem;
   top: 50%;
   transform: translateY(-50%);
+}
+.acd-label-content {
+  display: block;
+  width: calc(100% - 4rem);
 }
 .acd-content {
   height: 0;
@@ -327,26 +421,50 @@ footer p {
     font-size: 2.5rem;
   }
 
+  .propaganda {
+    font-size: 2.5rem;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
   /* HEADER */
   .page-header {
-    flex-direction: column;
-    align-items: center;
+    padding: 1.3rem 10%;
   }
   .main-nav {
-    font-size: 1rem;
-    margin-top: 10px;
-  }
-  .main-nav li {
-    margin: 0 20px;
+    display: none;
   }
 
   /* HOME */
-  .home-content {
-    margin-top: 20%;
+  #home-button {
+    flex-direction: column;
   }
-
-  /* RULE */
-  #rule .page-title {
-    margin-top: 30px;
+  .home-content {
+    width: 100%;
+  }
+  .home-content .propaganda {
+    font-size: 3rem;
+  }
+  /* ABOUT */
+  .about-content .about-column {
+    padding: 0 5%;
+  }
+  .about-content p {
+    font-size: 1.2rem;
+  }
+  .about-content img {
+    max-width: 100%;
+  }
+  .about-column {
+    flex-direction: column;
+  }
+  .about-column:nth-child(2n) {
+    padding: 3rem 5%;
+    flex-direction: column;
+  }
+  .about-column > div {
+    max-width: 100%;
   }
 }
