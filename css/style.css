@@ -163,7 +163,8 @@ img {
   left: 100%; /*leftの値を変更してメニューを画面外へ*/
   z-index: 80;
   background-color: #333;
-  transition: all 0.5s; /*アニメーション設定*/
+  transition: 0.5s; /*アニメーション設定*/
+  transition-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
 }
 .menu-content ul {
   padding: 70px 10px 0;
@@ -210,6 +211,12 @@ img {
   padding: 1.3rem 10%;
   height: 6rem;
   background-color: white;
+  box-shadow:
+    0px 1.4px 4.3px -28px rgba(0, 0, 0, 0.056),
+    0px 3.9px 11.8px -28px rgba(0, 0, 0, 0.08),
+    0px 9.3px 28.3px -28px rgba(0, 0, 0, 0.104),
+    0px 31px 94px -28px rgba(0, 0, 0, 0.16)
+  ;
 }
 .page-header a {
   display: inline;
@@ -379,7 +386,7 @@ footer p {
 }
 .acd-label:after {
   content: "";
-  background-image: url(../images/plus.svg);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cdefs%3e%3cstyle%3e.cls-1%7bfill:%235865f2%7d%3c/style%3e%3c/defs%3e%3cpath fill='%23999' d='M12.75 0v12.75H0v4.5h12.75V30h4.5V17.25H30v-4.5H17.25V0z' color='%23000' style='-inkscape-stroke:none'/%3e%3c/svg%3e");
   background-position: center;
   background-size: 50%;
   height: 100%;
@@ -396,18 +403,22 @@ footer p {
 }
 .acd-content {
   height: 0;
+  max-height: 0;
   opacity: 0;
   padding: 0 1.2rem;
   font-size: 1.1rem;
+  margin-bottom: 0;
   transition: 0.5s;
   visibility: hidden;
+  overflow: hidden;
 }
 .acd-check:checked + .acd-label:after {
   content: "";
-  background-image: url(../images/minus.svg);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cdefs%3e%3cstyle%3e.cls-1%7bfill:%235865f2%7d%3c/style%3e%3c/defs%3e%3cpath fill='%23999' d='M0 12.75v4.5h30v-4.5z' color='%23000' style='-inkscape-stroke:none'/%3e%3c/svg%3e");
 }
 .acd-check:checked + .acd-label + .acd-content {
   height: auto;
+  max-height: 10rem;
   opacity: 1;
   padding: 1rem 1.2rem 0;
   margin-bottom: 2.5rem;
