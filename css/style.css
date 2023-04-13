@@ -78,7 +78,8 @@ img {
   content: "";
 }
 .button01:hover {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.6);
+  transform: translateY(-3px);
 }
 .button02 {
   position: relative;
@@ -102,8 +103,9 @@ img {
   content: "";
 }
 .button02:hover {
-  color: rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.02);
+  color: rgba(255, 255, 255, 0.6);
+  transform: translateY(-3px);
 }
 
 /* ハンバーガーメニュー */
@@ -211,12 +213,9 @@ img {
   padding: 1.3rem 10%;
   height: 6rem;
   background-color: white;
-  box-shadow:
-    0px 1.4px 4.3px -28px rgba(0, 0, 0, 0.056),
+  box-shadow: 0px 1.4px 4.3px -28px rgba(0, 0, 0, 0.056),
     0px 3.9px 11.8px -28px rgba(0, 0, 0, 0.08),
-    0px 9.3px 28.3px -28px rgba(0, 0, 0, 0.104),
-    0px 31px 94px -28px rgba(0, 0, 0, 0.16)
-  ;
+    0px 9.3px 28.3px -28px rgba(0, 0, 0, 0.104), 0px 31px 94px -28px rgba(0, 0, 0, 0.16);
 }
 .page-header a {
   display: inline;
