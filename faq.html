@@ -4,133 +4,141 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>デジプレ公式サイト｜FAQ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>デジプレ公式サイト｜よくある質問</title>
     <meta
       name="description"
       content="Digitaltal Playground。通称デジプレ。シンプルで使いやすい雑談サーバーです。あなたの参加をお待ちしています。"
     />
     <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
-    <link rel="icon" href="favicon.ico" type="image/png" />
+    <link rel="icon" href="favicon.png" type="image/png" />
     <link rel="apple-touch-icon-precomposed" href="images/favicon.png" />
 
     <!-- OGP -->
-    <meta
-      property="og:url"
-      content="https://dejipure.ga/faq.html"
-    />
+    <meta property="og:url" content="https://dejipure.ga/about.html" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="デジプレ公式サイト｜FAQ" />
+    <meta property="og:title" content="デジプレ公式サイト｜よくある質問" />
     <meta
       property="og:description"
       content="Digitaltal Playground。通称デジプレ。シンプルで使いやすい雑談サーバーです。あなたの参加をお待ちしています。"
     />
     <meta property="og:site_name" content="Digitaltal Playground" />
-    <meta
-      property="og:image"
-      content="https://dejipure.ga/images/logo-img.png"
-    />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@digitaltal_" />
+    <meta property="og:image" content="https://dejipure.ga/images/logo_ogp.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@digitaltal_" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <div id="faq" class="big-bg">
-      <header class="page-header wrapper">
-        <h1>
-          <a href="index.html"
-            ><img src="images/logo.svg" alt="デジプレロゴ" class="logo"
-          /></a>
-        </h1>
-        <nav>
-          <ul class="main-nav">
-            <li><a href="rule.html">利用規約</a></li>
-            <li><a href="guide.html">ガイド</a></li>
-            <li><a href="faq.html">FAQ</a></li>
+    <header class="page-header">
+      <a href="index.html"
+        ><img src="images/logo_icon.min.svg" alt="デジプレロゴ" class="logo"
+      /></a>
+      <nav>
+        <ul class="main-nav">
+          <li><a href="./about.html">サーバーについて</a></li>
+          <li><a href="./terms.html">利用規約</a></li>
+          <li><a href="./faq.html">よくある質問</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger-menu">
+        <input type="checkbox" id="menu-btn-check" />
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <div class="menu-content">
+          <ul>
+            <li><a href="./index.html">ホーム</a></li>
+            <li><a href="./about.html">サーバーについて</a></li>
+            <li><a href="./terms.html">利用規約</a></li>
+            <li><a href="./faq.html">よくある質問</a></li>
           </ul>
-        </nav>
-      </header>
-
-      <div class="wrapper">
-        <h2 class="page-title">FAQ</h2>
+        </div>
       </div>
-    </div>
+    </header>
 
-    <div class="wrapper">
-      <ul class="faq-content">
-        <li>
-          <h2 class="sub-title">Q.どうやったら名前に色が付きますか？</h2>
-          <p>
-            A.たくさん発言することによって経験値が溜まってレベルアップします。特定のレベルに上がると色が付きます。
-          </p>
-        </li>
+    <div id="faq">
+      <div class="banner">
+        <div class="wrapper">
+          <p class="sub-title">よくある質問</p>
+          <h2 class="page-title">FAQ</h2>
+        </div>
+      </div>
+      <div class="wrapper">
+        <ul class="faq-content">
+          <li class="faq-item">
+            <input id="acd-check01" class="acd-check" type="checkbox" />
+            <label class="acd-label" for="acd-check01"
+              ><span class="acd-label-content">サーバーオーナーは誰？</span></label
+            >
+            <div class="acd-content">
+              <p><span class="discord">でじたるたる#9009</span>です。</p>
+            </div>
+          </li>
 
-        <li>
-          <h2 class="sub-title">Q.自己紹介は絶対にしないとダメ？</h2>
-          <p>A.いいえ。任意です。</p>
-        </li>
+          <li class="faq-item">
+            <input id="acd-check02" class="acd-check" type="checkbox" />
+            <label class="acd-label" for="acd-check02"
+              ><span class="acd-label-content">STAFFってなに？</span></label
+            >
+            <div class="acd-content">
+              <p>キックやBANなどの権限を与えられているメンバーです。</p>
+            </div>
+          </li>
 
-        <li>
-          <h2 class="sub-title">Q.サーバーオーナーは誰？</h2>
-          <p>A.<span class="discord">でじたるたる#9009</span>です。</p>
-        </li>
+          <li class="faq-item">
+            <input id="acd-check03" class="acd-check" type="checkbox" />
+            <label class="acd-label" for="acd-check03"
+              ><span class="acd-label-content"
+                >自己紹介は絶対にしないとダメ？</span
+              ></label
+            >
+            <div class="acd-content">
+              <p>いいえ。任意です。</p>
+            </div>
+          </li>
 
-        <li>
-          <h2 class="sub-title">
-            Q.まよいちゃんやはてなちゃんってなんですか？
-          </h2>
-          <p>
-            A.<span class="discord">でじたるたる#9009</span
-            >が開発しているBOTです。
-          </p>
-        </li>
+          <li class="faq-item">
+            <input id="acd-check04" class="acd-check" type="checkbox" />
+            <label class="acd-label" for="acd-check04"
+              ><span class="acd-label-content"
+                >どうやったら名前に色が付きますか？</span
+              ></label
+            >
+            <div class="acd-content">
+              <p>
+                たくさん発言することによって経験値が溜まってレベルアップします。特定のレベルに上がると色が付きます。
+              </p>
+            </div>
+          </li>
 
-        <!--
-        <li>
-          <h2 class="sub-title">
-            Q.デジプレにフレンドを招待したいけどURLどこ？
-          </h2>
-          <p>
-            A.<span class="discord">#🔰｜ヘルプ</span
-            >の「招待URL」の部分にあります。
-          </p>
-        </li>
-        -->
-
-        <li>
-          <h2 class="sub-title">Q.もっと色んなジャンルの話がしたい！</h2>
-          <p>
-            A.<span class="discord">#⚙｜ロール付与</span
-            >から興味のあるカテゴリに対応したロールを取得してください。
-          </p>
-        </li>
-
-        <li>
-          <h2 class="sub-title">Q.STAFFってなに？</h2>
-          <p>A.キック、BAN権限等を与えられているメンバーです。</p>
-        </li>
-
-        <li>
-          <h2 class="sub-title">
-            Q.どうやったら自分の発言量(経験値)が見られるの？
-          </h2>
-          <p>
-            A.<span class="discord">#🤖｜bot操作（ミュート推奨</span>で「/top members server」と入力してください。
-          </p>
-        </li>
-      </ul>
+          <li class="faq-item">
+            <input id="acd-check05" class="acd-check" type="checkbox" />
+            <label class="acd-label" for="acd-check05"
+              ><span class="acd-label-content"
+                >自分の発言量（経験値）はどうやったら確認できますか？</span
+              ></label
+            >
+            <div class="acd-content">
+              <p>
+                <span class="discord">#🤖｜bot操作（ミュート推奨</span>で「/top members
+                server」と入力してください。
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <footer>
       <div class="wrapper">
-        <p><small>&copy; 2022 Digitaltal</small></p>
+        <p><small>&copy; 2023 Digitaltal</small></p>
       </div>
     </footer>
   </body>
