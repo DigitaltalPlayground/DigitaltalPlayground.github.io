@@ -111,7 +111,7 @@ img {
 /* ハンバーガーメニュー */
 .menu-btn {
   position: fixed;
-  top: 10px;
+  top: calc(3rem - 30px);
   right: 10px;
   display: flex;
   height: 60px;
@@ -259,7 +259,7 @@ footer p {
 /* HOME */
 #home {
   position: relative;
-  background-image: url(../images/bg.png);
+  background-image: url(../images/bg.webp);
   margin-top: 6rem;
   height: calc(100vh - 6rem);
   height: calc(100dvh - 6rem);
